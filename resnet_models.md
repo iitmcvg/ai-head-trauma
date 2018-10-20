@@ -5,7 +5,7 @@ Train acc: 0.8958  |  Val acc: **0.5560**
 - Replaced dense output layer of 1000 classes with a dense layer of 2 classes.
 - Only made Fully connected layers trainable (4,098 trainable parameters).
 
-![accuracy vs number of epochs](resnet_model_1.png)
+![accuracy vs number of epochs](/media/resnet_model_1.png)
 
 ### Observations
 - Better than dummy classifier.
@@ -20,7 +20,7 @@ Train acc: 0.59  |  Val acc: **0.5250**
 - Replaced fully connected layer of resnet50 with a dense(512), dropout(0.5), dense(256), dropout(0.5), output dense(2)
 - Only made Fully connected layers trainable (1,180,930 trainable parameters)
 
-![accuracy vs number of epochs](resnet_model_2.png)
+![accuracy vs number of epochs](/media/resnet_model_2.png)
 
 ### Observations
 - More dropout layers were initially added to prevent overfitting. But I also increased the number of trainable parameters by adding dense layers defeating the purpose of it. 
@@ -31,7 +31,7 @@ Train acc: 0.59  |  Val acc: **0.5250**
 Train acc: 0.9852  |  Val acc: **0.444**
 - I unfroze the parameters for last few convolutional layers in above 2 models and trained them. Only further drop in validation accuracy occured with even higher overfitting. Not insightful
 
-![accuracy vs number of epochs](resnet_model_3.png)
+![accuracy vs number of epochs](/media/resnet_model_3.png)
 
 ---
 ---
@@ -48,7 +48,7 @@ Train acc: 0.6033  |  Val acc: **0.5960**
 - Added a dropout(0.5) layer between flatten(2048) and dense output layer.
 - Only made Fully connected layers trainable (4,098 trainable parameters).
 
-![accuracy vs number of epochs](augmented_model_1_acc.png)
+![accuracy vs number of epochs](/media/augmented_model_1_acc.png)
 
 ### Observations
 - Observed huge increase in accuracy compared to unaugmented models. The increase was also stable i.e. it was observed in many epochs and val acc was always above 0.52 . 
@@ -63,8 +63,8 @@ Train acc: 0.7268  |  Val acc: **0.6418**
 - Everything same as augmented_resnet_model_1 but also added a dense layer(512) in between the flatten and dropout layer.
 - Only made Fully connected layers trainable (1,050,114 trainable parameters).
 
-![accuracy vs number of epochs](augmented_model_2_preloaded_acc.png)
-![loss vs number of epochs](augmented_model_2_preloaded_loss.png)
+![accuracy vs number of epochs](/media/augmented_model_2_preloaded_acc.png)
+![loss vs number of epochs](/media/augmented_model_2_preloaded_loss.png)
 
 ### Observations
 - Some improvement to acc was observed. However, the acc vs epochs and loss vs epochs graphs were fluctuating . 
@@ -80,9 +80,9 @@ Train acc: 0.9413  |  Val acc: **0.7505**
 - Used weights of above model.
 - retrained last 15 layers of model of which 3 were conv layers (5,515,778 trainable parameters).
 
-![accuracy vs number of epochs](augmented_model_3_acc.png)
+![accuracy vs number of epochs](/media/augmented_model_3_acc.png)
 
-![loss vs number of epochs](augmented_model_3_loss.png)
+![loss vs number of epochs](/media/augmented_model_3_loss.png)
 
 ### Observations
 - Observed huge increase in accuracy. 
@@ -95,16 +95,16 @@ Train acc: 0.9413  |  Val acc: **0.7505**
 Train acc: 0.5411  |  Val acc: **0.5650**
 - Model: 5x5, max pool, 3x3, mp, 3x3,mp, 3x3, mp, fc
 
-![accuracy vs number of epoch](custom_model_1_acc.png)
+![accuracy vs number of epoch](/media/custom_model_1_acc.png)
 
-![loss vs number of epochs](custom_model_1_loss.png)
+![loss vs number of epochs](/media/custom_model_1_loss.png)
 
 ### Observations
 - More testing needs to be done on this simple architecture. 
 - The weights are initialized as 'uniform_random'. Other weight initializations need to be tried. As the model is getting stuck in local minimas.
 - Performed Image augmentation on this custom model, the acc dropped even further.
   
-![accuracy vs number of epoch](custom_model_1_aug_acc.png)
+![accuracy vs number of epoch](/media/custom_model_1_aug_acc.png)
 
 ---
 ### Sidenote
