@@ -1,4 +1,4 @@
-## Dataset: 
+## Dataset (provided by JIPMER): 
 - Prepared from CT scans of **42 patients** of which 21 patients were operated on. Thus, Imbalanced classes are not present.
 
 - The task at hand is a **binary classification problem** to determine whether patient is operated on(1) or not(0).
