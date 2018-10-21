@@ -1,3 +1,10 @@
+## Dataset: 
+- Prepared from CT scans of **42 patients** of which 21 patients were operated on. Thus, Imbalanced classes are not present.
+
+- The task at hand is a **binary classification problem** to determine whether patient is operated on(1) or not(0).
+
+- Flattened the CT scan videos (raw data) to dataset consisting of 2,343 slices.
+
 ## resnet_model_1
 <!-- Transfer learning -->
 Train acc: 0.8958  |  Val acc: **0.5560**
@@ -102,7 +109,7 @@ Train acc: 0.5411  |  Val acc: **0.5650**
 ### Observations
 - More testing needs to be done on this simple architecture. 
 - The weights are initialized as 'uniform_random'. Other weight initializations need to be tried. As the model is getting stuck in local minimas.
-- Performed Image augmentation on this custom model, the acc dropped even further.
+- Performed Image augmentation on this custom model, the acc didn't improve by much.
   
 ![accuracy vs number of epoch](/media/custom_model_1_aug_acc.png)
 
