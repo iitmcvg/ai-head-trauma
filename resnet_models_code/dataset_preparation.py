@@ -1,4 +1,4 @@
-""" Prepares the dataset needed for deep learning models. Dataset is created from the images obtained by executing Vid2Img.py"""
+""" Prepares the dataset needed for deep learning models. Dataset is created from the images obtained by executing Vid2Img.py (Slices of 42 CT scan videos provided by JIPMER)"""
 import os
 import cv2
 import pandas as pd

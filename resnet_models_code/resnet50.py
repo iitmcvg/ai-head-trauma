@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-'''ResNet50 model for Keras.
-# Reference:
-- [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
-Adapted from code contributed by BigMoyan.
-'''
+""" Resnet50 architecture needed for import in other transfer learning model files augmented_resnet_models_X.py and resnet_models_X.py """
+
 from __future__ import print_function
 
 import numpy as np

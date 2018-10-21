@@ -1,3 +1,4 @@
+""" Contains the code for resnet_models_1/2/3 as explained in resnet_models.md """
 import os
 import time
 import numpy as np

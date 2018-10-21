@@ -1,4 +1,4 @@
-""" This program stores and captures images from CT scan videos provided by JIPMER"""
+""" This program stores and captures images/slices from CT scan videos provided by JIPMER"""
 import cv2
 import os
 

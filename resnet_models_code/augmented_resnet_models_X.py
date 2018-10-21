@@ -1,3 +1,4 @@
+""" Contains the code for augmented_resnet_models_1/2/3 and also custom_model_1 as explained in resnet_models.md """
 import os
 import numpy as np
 from resnet50 import ResNet50
